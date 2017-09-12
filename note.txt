@@ -1,0 +1,2 @@
+localhost ubuntu: env.php.txt replace /app/etc/env.php
+admin info: admin/123456a@
