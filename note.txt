@@ -1,2 +1,6 @@
 localhost ubuntu: env.php.txt replace /app/etc/env.php
 admin info: admin/123456a@
+
+1. Css js load wrong
+https://magento.stackexchange.com/questions/97209/magento-2-css-and-javascript-not-loading-from-correct-folder
+
