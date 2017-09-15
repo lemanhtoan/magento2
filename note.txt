@@ -4,3 +4,7 @@ admin info: admin/123456a@
 1. Css js load wrong
 https://magento.stackexchange.com/questions/97209/magento-2-css-and-javascript-not-loading-from-correct-folder
 
+2. php bin/magento module:status - list module
+3. php bin/magento module:enable Name_Of_Module - enabled module
+4. php bin/magento setup:upgrade - Update when create new module or update
+5. php bin/magento cache:clean - Clear cache
