@@ -27,6 +27,7 @@ class Posts extends Template
         PostCollectionFactory $postCollectionFactory,
         array $data = []
     ) {
+
         $this->_postCollectionFactory = $postCollectionFactory;
         parent::__construct($context, $data);
     }
@@ -50,7 +51,8 @@ class Posts extends Template
     public function getPostUrl(
         Post $post
     ) {
-        return '/blog/post/view/id/' . $post->getId();
+        return '/magento2/blog/post/view/id/' . $post->getId();
+//        return '/blog/post/view/id/' . $post->getId();
     }
 
 }

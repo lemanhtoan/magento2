@@ -2,12 +2,13 @@
 
 namespace Toanlm\Blog\Controller\Index;
 
+use \Magento\Framework\App\Action\Action;
 use \Magento\Framework\View\Result\PageFactory;
 use \Magento\Framework\View\Result\Page;
 use \Magento\Framework\App\Action\Context;
 use \Magento\Framework\Exception\LocalizedException;
 
-class Index extends \Magento\Framework\App\Action\Action
+class Index extends Action
 {
 
     /**
@@ -26,9 +27,7 @@ class Index extends \Magento\Framework\App\Action\Action
         Context $context,
         PageFactory $resultPageFactory
     ) {
-        parent::__construct(
-            $context
-        );
+        parent::__construct($context);
         $this->resultPageFactory = $resultPageFactory;
     }
 
@@ -38,7 +37,7 @@ class Index extends \Magento\Framework\App\Action\Action
      * @throws LocalizedException
      */
     public function execute()
-    {die('fff');exit;
+    {
         $resultPage = $this->resultPageFactory->create();
         return $resultPage;
     }
